@@ -573,7 +573,7 @@ function ContactSection() {
           </MagneticButton>
           <MagneticButton href="https://mail.google.com/mail/?view=cm&fs=1&to=francocaetano20@gmail.com" variant="secondary">
             <Mail className="h-4 w-4" />
-            Email
+            Gmail
           </MagneticButton>
         </div>
       </motion.div>
