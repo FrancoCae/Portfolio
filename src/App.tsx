@@ -47,8 +47,8 @@ const projects = [
     title: "Martina Studio",
     type: "Proyecto para cliente / E-commerce",
     description:
-      "Sitio web moderno de accesorios con catálogo de productos, experiencia de compra e integración de pedidos mediante WhatsApp.",
-    tech: ["React", "Next.js", "Tailwind CSS"],
+      "Sitio web moderno de accesorios con catálogo de productos, experiencia de compra y backend desarrollado con Laravel para la gestión de productos y contenido.",
+    tech: ["React", "Next.js", "Tailwind CSS", "Laravel"],
     accent: "from-[#181311] via-[#241d1a] to-[#2f2722]",
   },
   {
@@ -221,7 +221,7 @@ function HeroSection() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="mt-6 max-w-2xl text-base font-light leading-8 text-mist/64 sm:text-lg"
             >
-              Apasionado por Machine Learning, análisis de datos, Python y desarrollo web moderno.
+              Background académico con formación internacional Cambridge IGCSE e apasionado por Machine Learning, análisis de datos, Python y desarrollo web moderno.
               Actualmente estudiando Ciencia de Datos en la UBA y construyendo proyectos reales.
             </motion.p>
             <motion.div
@@ -416,13 +416,32 @@ function ProjectCard({
               ))}
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <MagneticButton href="#" variant="secondary">
-                GitHub
-              </MagneticButton>
-              <MagneticButton href="#" variant="primary">
-                Live Demo
-              </MagneticButton>
-            </div>
+
+  {project.title === "Martina Studio" ? (
+    <>
+      <MagneticButton href="#" variant="primary">
+        Próximamente
+      </MagneticButton>
+    </>
+  ) : project.title === "GEPCORP" ? (
+    <>
+      <MagneticButton href="#" variant="primary">
+      Próximamente
+      </MagneticButton>
+    </>
+  ) : (
+    <>
+      <MagneticButton href="#" variant="secondary">
+      Próximamente
+      </MagneticButton>
+
+      <MagneticButton href="#" variant="primary">
+      Próximamente
+      </MagneticButton>
+    </>
+  )}
+
+</div>
           </div>
         </div>
         <motion.div
