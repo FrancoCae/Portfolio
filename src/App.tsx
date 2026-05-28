@@ -49,7 +49,7 @@ const projects = [
     description:
       "Sitio web moderno de accesorios con catálogo de productos, experiencia de compra e integración de pedidos mediante WhatsApp.",
     tech: ["React", "Next.js", "Tailwind CSS"],
-    accent: "from-[#f2e7dc] via-[#d4a373] to-[#7f5539]",
+    accent: "from-[#181311] via-[#241d1a] to-[#2f2722]",
   },
   {
     title: "GEPCORP",
@@ -57,7 +57,7 @@ const projects = [
     description:
       "Sitio web corporativo para una empresa de consultoría energética enfocado en diseño responsive, presentación profesional y experiencia moderna.",
     tech: ["React", "Web Development", "UI Design"],
-    accent: "from-[#a8dadc] via-[#457b9d] to-[#1d3557]",
+    accent: "from-[#071a12] via-[#0f3d2e] to-[#1b5e49]",
   },
   {
     title: "Proyecto de Machine Learning",
@@ -251,8 +251,13 @@ function HeroSection() {
               className="absolute left-10 top-10 rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-mist backdrop-blur"
             >
               <BrainCircuit className="mb-8 h-9 w-9" />
-              <p className="text-xs uppercase tracking-[0.28em] text-mist/50">Modelo activo</p>
-              <p className="mt-2 text-3xl font-semibold">94.8%</p>
+              <p className="text-xs uppercase tracking-[0.28em] text-mist/50">
+  Stack principal
+</p>
+
+<p className="mt-2 text-3xl font-semibold leading-tight">
+Python · SQL · ML
+</p>
             </motion.div>
             <motion.div
               animate={{ y: [0, 18, 0] }}
@@ -260,8 +265,9 @@ function HeroSection() {
               className="absolute bottom-10 right-8 w-64 rounded-2xl border border-white/10 bg-mist p-5 text-night shadow-2xl"
             >
               <MousePointer2 className="mb-12 h-8 w-8" />
-              <p className="text-xs uppercase tracking-[0.28em] text-night/50">Experiencias web</p>
-              <p className="mt-2 text-2xl font-semibold">Interactivas</p>
+              <p className="text-xs uppercase tracking-[0.28em] text-night/50">Proyectos
+              </p>
+              <p className="mt-2 text-2xl font-semibold">Frontend & Data</p>
             </motion.div>
             <div className="absolute bottom-20 left-12 h-24 w-52 rounded-full bg-[#BBCCD7]/20 blur-3xl" />
           </motion.div>
@@ -427,19 +433,50 @@ function ProjectCard({
           <div className="absolute inset-0 opacity-30 animated-grid" />
           <div className="absolute inset-6 rounded-[1.2rem] border border-white/25 bg-black/20 backdrop-blur-sm" />
           <motion.div
-            animate={{ y: [0, -18, 0], rotate: [0, 1.4, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute left-8 top-8 w-56 rounded-2xl border border-white/25 bg-white/20 p-5 text-white backdrop-blur-md"
-          >
-            <p className="text-xs uppercase tracking-[0.28em] text-white/65">Preview</p>
-            <div className="mt-8 h-2 rounded-full bg-white/70" />
-            <div className="mt-3 h-2 w-2/3 rounded-full bg-white/40" />
-            <div className="mt-8 grid grid-cols-3 gap-2">
-              <span className="h-14 rounded-xl bg-white/25" />
-              <span className="h-14 rounded-xl bg-white/45" />
-              <span className="h-14 rounded-xl bg-white/25" />
-            </div>
-          </motion.div>
+  whileHover={{ scale: 1.015 }}
+  transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+  className={`relative min-h-[24rem] overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${project.accent}`}
+      >
+  {project.title === "Martina Studio" ? (
+    <div className="grid h-full grid-cols-[0.42fr_0.58fr] gap-4 p-5">
+      
+      <div className="flex flex-col gap-4">
+        <img
+          src="/catalogo.png"
+          alt="Catálogo de Martina Studio"
+          className="h-1/2 w-full rounded-[1.4rem] bg-white object-contain p-2"
+        />
+
+        <img
+          src="/carrito.png"
+          alt="Carrito de Martina Studio"
+          className="h-1/2 w-full rounded-[1.4rem] bg-white object-contain p-2"
+        />
+      </div>
+
+      <img
+        src="/main.png"
+        alt="Página principal de Martina Studio"
+        className="h-full w-full rounded-[1.4rem] bg-white object-contain p-2"
+      />
+    </div>
+    ) : project.title === "GEPCORP" ? (
+
+      <div className="h-full p-5">
+        <img
+          src="/gepcorp_hero.png"
+          alt="GEPCORP Website"
+          className="h-full w-full rounded-[1.4rem] object-cover"
+        />
+      </div>
+    
+    
+  ) : (
+    <div className="flex h-full items-center justify-center p-5 text-mist/60">
+      Próximamente imágenes del proyecto
+    </div>
+  )}
+</motion.div>
           <motion.div
             animate={{ y: [0, 22, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -492,28 +529,30 @@ function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-        className="relative mx-auto max-w-5xl text-center"
+        className="relative mx-auto max-w-7xl text-center"
       >
         <p className="mb-6 text-xs font-medium uppercase tracking-[0.34em] text-mist/55">
           Contacto
         </p>
-        <h2 className="gradient-text text-[clamp(3.2rem,9vw,9rem)] font-black uppercase leading-[0.9] tracking-[-0.05em]">
-          Construyamos Algo
-        </h2>
+        <h2 className="gradient-text mx-auto text-center text-[clamp(4rem,10vw,10rem)] font-black uppercase leading-[0.88] tracking-[-0.06em]">
+  Construyamos
+  <br />
+  Algo
+</h2>
         <p className="mx-auto mt-8 max-w-3xl text-xl font-light leading-9 text-mist/68">
           Siempre estoy interesado en nuevas oportunidades, colaboraciones y proyectos
           relacionados con Data Science, Machine Learning y desarrollo.
         </p>
         <div className="mt-12 flex flex-col justify-center gap-4 sm:flex-row">
-          <MagneticButton href="https://www.linkedin.com/" variant="primary">
+          <MagneticButton href="https://www.linkedin.com/in/francocaetano/" variant="primary">
             <BriefcaseBusiness className="h-4 w-4" />
             LinkedIn
           </MagneticButton>
-          <MagneticButton href="https://github.com/" variant="secondary">
+          <MagneticButton href="https://github.com/FrancoCae" variant="secondary">
             <GitBranch className="h-4 w-4" />
             GitHub
           </MagneticButton>
-          <MagneticButton href="mailto:franco.caetano@email.com" variant="secondary">
+          <MagneticButton href="mailto:francocaetano20@gmail.com" variant="secondary">
             <Mail className="h-4 w-4" />
             Email
           </MagneticButton>
