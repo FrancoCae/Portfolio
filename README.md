@@ -8,7 +8,7 @@ Diseñado para mostrar proyectos de desarrollo web, interfaces modernas y futuro
 
 ## Preview
 
-![Portfolio Preview](./public/main.png)
+![Portfolio Preview](./public/main_portfolio.png)
 
 ---
 
@@ -51,5 +51,5 @@ npm run dev
 
 ## Contacto
 [LinkedIn:](https://www.linkedin.com/in/francocaetano/)
-GitHub: https://github.com/TU-USUARIO
-Email: tuemail@gmail.com
+GitHub: https://github.com/FrancoCae
+Email: francocaetano20@gmail.com
