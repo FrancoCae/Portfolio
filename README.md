@@ -50,6 +50,6 @@ npm run dev
 ```
 
 ## Contacto
-[LinkedIn:](https://www.linkedin.com/in/francocaetano/)
-GitHub: https://github.com/FrancoCae
-Email: francocaetano20@gmail.com
+[LinkedIn](https://www.linkedin.com/in/francocaetano/)
+[GitHub](https://github.com/FrancoCae)
+[Gmail](mailto:francocaetano20@gmail.com)
