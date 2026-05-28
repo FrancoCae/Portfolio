@@ -241,7 +241,7 @@ function HeroSection() {
             initial={{ opacity: 0, scale: 0.9, y: 50 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mx-auto hidden aspect-square w-full max-w-[24rem] lg:block xl:max-w-[28rem] 2xl:max-w-[34rem]"
+            className="relative mx-auto hidden aspect-square w-full max-w-[24rem] lg:block xl:max-w-[28rem] 2xl:max-w-[30rem]"
           >
             <div className="absolute inset-0 rounded-[2rem] border border-white/10 bg-white/[0.035] shadow-glow backdrop-blur-xl" />
             <div className="absolute inset-6 rounded-[1.5rem] border border-white/10 bg-[#101214]" />
