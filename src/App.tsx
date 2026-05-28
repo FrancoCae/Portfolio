@@ -241,14 +241,14 @@ function HeroSection() {
             initial={{ opacity: 0, scale: 0.9, y: 50 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mx-auto hidden aspect-square w-full max-w-[16rem] lg:block xl:max-w-[20rem] 2xl:max-w-[28rem]"
+            className="relative mx-auto hidden aspect-square w-full max-w-[14rem] lg:block lg:max-w-[18rem] xl:max-w-[24rem] 2xl:max-w-[34rem]"
           >
             <div className="absolute inset-0 rounded-[2rem] border border-white/10 bg-white/[0.035] shadow-glow backdrop-blur-xl" />
             <div className="absolute inset-6 rounded-[1.5rem] border border-white/10 bg-[#101214]" />
             <motion.div
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute left-2 top-2 scale-[0.45] xl:scale-100 rounded-2xl border border-white/10 bg-white/[0.04] p-2 xl:p-5 text-mist backdrop-blur origin-top-left"
+              className="absolute left-4 top-4 scale-[0.55] lg:scale-[0.65] xl:scale-[0.8] 2xl:scale-100 rounded-2xl border border-white/10 bg-white/[0.04] p-3 xl:p-5 text-mist backdrop-blur origin-top-left"
             >
               <BrainCircuit className="mb-8 h-9 w-9" />
               <p className="text-xs uppercase tracking-[0.28em] text-mist/50">
@@ -262,8 +262,7 @@ Python · SQL · ML
             <motion.div
               animate={{ y: [0, 18, 0] }}
               transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute bottom-2 right-2 w-36 xl:w-64 scale-[0.45] xl:scale-100 rounded-2xl border border-white/10 bg-mist p-2 xl:p-5 text-night shadow-2xl origin-bottom-right"
-            >
+              className="absolute bottom-4 right-4 w-36 xl:w-64 scale-[0.55] lg:scale-[0.65] xl:scale-[0.8] 2xl:scale-100 rounded-2xl border border-white/10 bg-mist p-3 xl:p-5 text-night shadow-2xl origin-bottom-right">
               <MousePointer2 className="mb-12 h-8 w-8" />
               <p className="text-xs uppercase tracking-[0.28em] text-night/50">Proyectos
               </p>
