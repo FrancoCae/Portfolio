@@ -185,7 +185,7 @@ function HeroSection() {
           </motion.div>
         </nav>
 
-        <div className="grid flex-1 items-center gap-10 py-20 xl:grid-cols-[1.15fr_0.85fr] 2xl:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid flex-1 items-center gap-8 py-20 lg:grid-cols-[1.25fr_0.75fr] xl:grid-cols-[1.15fr_0.85fr] 2xl:grid-cols-[1.1fr_0.9fr]">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -241,14 +241,14 @@ function HeroSection() {
             initial={{ opacity: 0, scale: 0.9, y: 50 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mx-auto hidden aspect-square w-full max-w-[24rem] xl:block 2xl:max-w-[34rem]"
+            className="relative mx-auto hidden aspect-square w-full max-w-[16rem] lg:block xl:max-w-[24rem] 2xl:max-w-[34rem]"
           >
             <div className="absolute inset-0 rounded-[2rem] border border-white/10 bg-white/[0.035] shadow-glow backdrop-blur-xl" />
             <div className="absolute inset-6 rounded-[1.5rem] border border-white/10 bg-[#101214]" />
             <motion.div
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute left-10 top-10 rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-mist backdrop-blur"
+              className="absolute left-2 top-2 scale-[0.45] xl:scale-100 rounded-2xl border border-white/10 bg-white/[0.04] p-2 xl:p-5 text-mist backdrop-blur origin-top-left"
             >
               <BrainCircuit className="mb-8 h-9 w-9" />
               <p className="text-xs uppercase tracking-[0.28em] text-mist/50">
@@ -262,7 +262,7 @@ Python · SQL · ML
             <motion.div
               animate={{ y: [0, 18, 0] }}
               transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute bottom-10 right-8 w-64 rounded-2xl border border-white/10 bg-mist p-5 text-night shadow-2xl"
+              className="absolute bottom-2 right-2 w-36 xl:w-64 scale-[0.45] xl:scale-100 rounded-2xl border border-white/10 bg-mist p-2 xl:p-5 text-night shadow-2xl origin-bottom-right"
             >
               <MousePointer2 className="mb-12 h-8 w-8" />
               <p className="text-xs uppercase tracking-[0.28em] text-night/50">Proyectos
