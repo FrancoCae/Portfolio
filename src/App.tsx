@@ -389,10 +389,10 @@ function ProjectCard({
   return (
     <motion.article
       style={{ scale, top: `${92 + index * 26}px` }}
-      className="sticky mb-10 overflow-hidden rounded-[2rem] border border-white/10 bg-[#121212] p-5 shadow-[0_30px_120px_rgba(0,0,0,0.5)] sm:p-8 lg:p-10"
+      className="sticky mb-16 overflow-hidden rounded-[2rem] border border-white/10 bg-[#121212] p-5 shadow-[0_30px_120px_rgba(0,0,0,0.5)] sm:p-8 lg:mb-10 lg:p-10"
     >
-      <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
-        <div className="flex min-h-[26rem] flex-col justify-between">
+      <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+        <div className="flex min-h-[34rem] flex-col justify-between lg:min-h-[26rem]">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.32em] text-mist/45">
               {project.type}
@@ -447,19 +447,19 @@ function ProjectCard({
         <motion.div
           whileHover={{ scale: 1.015 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className={`relative min-h-[24rem] overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${project.accent}`}
+          className={`relative min-h-[32rem] overflow-hidden rounded-[1.5rem] bg-gradient-to-br lg:min-h-[24rem] ${project.accent}`}
         >
           <div className="absolute inset-0 opacity-30 animated-grid" />
           <div className="absolute inset-6 rounded-[1.2rem] border border-white/25 bg-black/20 backdrop-blur-sm" />
           <motion.div
   whileHover={{ scale: 1.015 }}
   transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-  className={`relative min-h-[24rem] overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${project.accent}`}
+  className={`relative min-h-[32rem] overflow-hidden rounded-[1.5rem] bg-gradient-to-br lg:min-h-[24rem] ${project.accent}`}
       >
   {project.title === "Martina Studio" ? (
-    <div className="grid h-full grid-cols-[0.42fr_0.58fr] gap-4 p-5">
+    <div className="grid h-full min-h-[32rem] grid-cols-1 gap-4 p-5 sm:grid-cols-[0.42fr_0.58fr] lg:min-h-[24rem]">
       
-      <div className="flex flex-col gap-4">
+      <div className="flex min-h-[20rem] flex-col gap-4 sm:min-h-0">
         <img
           src="/catalogo.png"
           alt="Catálogo de Martina Studio"
@@ -491,7 +491,7 @@ function ProjectCard({
     
     
   ) : (
-    <div className="flex h-full items-center justify-center p-5 text-mist/60">
+    <div className="flex h-full min-h-[32rem] items-center justify-center p-5 text-mist/60 lg:min-h-[24rem]">
       Próximamente imágenes del proyecto
     </div>
   )}
@@ -542,7 +542,7 @@ function ProjectsSection() {
 function ContactSection() {
   return (
     <section id="contacto" className="relative overflow-hidden px-5 py-28 sm:px-8 lg:px-12 lg:py-40">
-      <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#BBCCD7]/10 blur-3xl" />
+      <div className="absolute left-1/2 top-1/2 h-[22rem] w-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#BBCCD7]/10 blur-3xl sm:h-[34rem] sm:w-[34rem]" />
       <motion.div
         initial={{ opacity: 0, y: 42 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -550,15 +550,15 @@ function ContactSection() {
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
         className="relative mx-auto max-w-7xl text-center"
       >
-        <p className="mb-6 text-xs font-medium uppercase tracking-[0.34em] text-mist/55">
+        <p className="mb-6 text-xs font-medium uppercase tracking-[0.24em] text-mist/55 sm:tracking-[0.34em]">
           Contacto
         </p>
-        <h2 className="gradient-text mx-auto text-center text-[clamp(4rem,10vw,10rem)] font-black uppercase leading-[0.88] tracking-[-0.06em]">
+        <h2 className="gradient-text mx-auto max-w-full text-center text-[clamp(2.45rem,13vw,4.75rem)] font-black uppercase leading-[0.9] tracking-[-0.035em] sm:text-[clamp(4rem,10vw,10rem)] sm:leading-[0.88] sm:tracking-[-0.06em]">
   Construyamos
   <br />
   Algo
 </h2>
-        <p className="mx-auto mt-8 max-w-3xl text-xl font-light leading-9 text-mist/68">
+        <p className="mx-auto mt-8 max-w-3xl text-lg font-light leading-8 text-mist/68 sm:text-xl sm:leading-9">
           Siempre estoy interesado en nuevas oportunidades, colaboraciones y proyectos
           relacionados con Data Science, Machine Learning y desarrollo.
         </p>
