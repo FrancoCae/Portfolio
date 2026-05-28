@@ -571,7 +571,7 @@ function ContactSection() {
             <GitBranch className="h-4 w-4" />
             GitHub
           </MagneticButton>
-          <MagneticButton href="mailto:francocaetano20@gmail.com" variant="secondary">
+          <MagneticButton href="https://mail.google.com/mail/?view=cm&fs=1&to=francocaetano20@gmail.com" variant="secondary">
             <Mail className="h-4 w-4" />
             Email
           </MagneticButton>
