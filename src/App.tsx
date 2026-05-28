@@ -185,7 +185,7 @@ function HeroSection() {
           </motion.div>
         </nav>
 
-        <div className="grid flex-1 items-center gap-12 py-20 2xl:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid flex-1 items-center gap-10 py-20 xl:grid-cols-[1.15fr_0.85fr] 2xl:grid-cols-[1.1fr_0.9fr]">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -205,7 +205,7 @@ function HeroSection() {
             <motion.h1
               variants={fadeUp}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="gradient-text max-w-6xl pr-4 text-[clamp(4rem,13vw,13rem)] font-black uppercase leading-[0.78] tracking-[-0.04em]"
+              className="gradient-text max-w-full text-[clamp(3.8rem,11vw,11rem)] font-black uppercase leading-[0.82] tracking-[-0.02em] break-words"
             >
               Franco Caetano
             </motion.h1>
@@ -241,7 +241,7 @@ function HeroSection() {
             initial={{ opacity: 0, scale: 0.9, y: 50 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mx-auto hidden aspect-square w-full max-w-[34rem] 2xl:block"
+            className="relative mx-auto hidden aspect-square w-full max-w-[24rem] xl:block 2xl:max-w-[34rem]"
           >
             <div className="absolute inset-0 rounded-[2rem] border border-white/10 bg-white/[0.035] shadow-glow backdrop-blur-xl" />
             <div className="absolute inset-6 rounded-[1.5rem] border border-white/10 bg-[#101214]" />
