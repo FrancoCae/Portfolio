@@ -389,10 +389,10 @@ function ProjectCard({
   return (
     <motion.article
       style={{ scale, top: `${92 + index * 26}px` }}
-      className="sticky mb-16 overflow-hidden rounded-[2rem] border border-white/10 bg-[#121212] p-5 shadow-[0_30px_120px_rgba(0,0,0,0.5)] sm:p-8 lg:mb-10 lg:p-10"
+      className="static mb-24 overflow-hidden rounded-[2rem] border border-white/10 bg-[#121212] p-5 shadow-[0_30px_120px_rgba(0,0,0,0.5)] sm:p-8 md:sticky md:mb-16 lg:mb-10 lg:p-10"
     >
-      <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
-        <div className="flex min-h-[34rem] flex-col justify-between lg:min-h-[26rem]">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+        <div className="flex flex-col justify-between lg:min-h-[26rem]">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.32em] text-mist/45">
               {project.type}
@@ -447,19 +447,19 @@ function ProjectCard({
         <motion.div
           whileHover={{ scale: 1.015 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className={`relative min-h-[32rem] overflow-hidden rounded-[1.5rem] bg-gradient-to-br lg:min-h-[24rem] ${project.accent}`}
+          className={`relative h-[380px] overflow-hidden rounded-[1.5rem] bg-gradient-to-br lg:h-auto lg:min-h-[24rem] ${project.accent}`}
         >
           <div className="absolute inset-0 opacity-30 animated-grid" />
           <div className="absolute inset-6 rounded-[1.2rem] border border-white/25 bg-black/20 backdrop-blur-sm" />
           <motion.div
   whileHover={{ scale: 1.015 }}
   transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-  className={`relative min-h-[32rem] overflow-hidden rounded-[1.5rem] bg-gradient-to-br lg:min-h-[24rem] ${project.accent}`}
+  className={`relative h-full overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${project.accent}`}
       >
   {project.title === "Martina Studio" ? (
-    <div className="grid h-full min-h-[32rem] grid-cols-1 gap-4 p-5 sm:grid-cols-[0.42fr_0.58fr] lg:min-h-[24rem]">
+    <div className="grid h-full grid-cols-[0.42fr_0.58fr] gap-4 p-5">
       
-      <div className="flex min-h-[20rem] flex-col gap-4 sm:min-h-0">
+      <div className="flex min-h-0 flex-col gap-4">
         <img
           src="/catalogo.png"
           alt="Catálogo de Martina Studio"
@@ -491,7 +491,7 @@ function ProjectCard({
     
     
   ) : (
-    <div className="flex h-full min-h-[32rem] items-center justify-center p-5 text-mist/60 lg:min-h-[24rem]">
+    <div className="flex h-full items-center justify-center p-5 text-mist/60">
       Próximamente imágenes del proyecto
     </div>
   )}
