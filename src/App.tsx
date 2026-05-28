@@ -553,7 +553,7 @@ function ContactSection() {
         <p className="mb-6 text-xs font-medium uppercase tracking-[0.24em] text-mist/55 sm:tracking-[0.34em]">
           Contacto
         </p>
-        <h2 className="gradient-text mx-auto max-w-full text-center text-[clamp(2.45rem,13vw,4.75rem)] font-black uppercase leading-[0.9] tracking-[-0.035em] sm:text-[clamp(4rem,10vw,10rem)] sm:leading-[0.88] sm:tracking-[-0.06em]">
+        <h2 className="gradient-text mx-auto max-w-full text-center text-[clamp(2.45rem,13vw,4.75rem)] font-black uppercase leading-[0.9] tracking-[-0.02em] sm:text-[clamp(4rem,10vw,10rem)] sm:leading-[0.88] sm:tracking-[-0.06em]">
   Construyamos
   <br />
   Algo
